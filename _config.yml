@@ -1,20 +1,59 @@
-# General
-name: Idealistul
-description: "Ideally Speaking"
-url: http://mariuspana.github.io
+# Site wide configuration
 
-markdown: redcarpet
+title:            "Ideally Speaking"
+locale:           en_US
+url:              http://idealistul.ro
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
 highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
-paginate: 5
-permalink: /:title
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
 
-# Social share and comments.
-#disqus-id: yourusername
-twitter: mariuspana
-github: mariuspana
-google: +mariuspana
 
-# RSS feed
-rss-feed-limit: 10
-rss-show-full: "no"
+# Site owner
+owner:
+  name: Marius Pana
+  avatar: http://s.gravatar.com/avatar/570e8080be547f275936a071c56443e4?s=80
+  bio: "Words without actions are the assasins of ideaslism. (Herbet Hoover)"
+  email: "idealistul@idealistul.ro"
+  disqus-shortname:
+  twitter: #mariuspana
+  facebook: #marius.pana
+  google:
+    plus: #MariusPana
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: #mariuspana
+  stackoverflow:
+  linkedin: #mariuspana
+  instagram:
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
+  youtube:
+  soundcloud:
+  weibo:
+  flickr:
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
