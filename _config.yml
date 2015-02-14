@@ -1,0 +1,20 @@
+# General
+name: Idealistul
+description: "Ideally Speaking"
+url: http://localhost:4000
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 5
+permalink: /:title
+
+# Social share and comments.
+#disqus-id: yourusername
+twitter: mariuspana
+github: mariuspana
+google: +mariuspana
+
+# RSS feed
+rss-feed-limit: 10
+rss-show-full: "no"
