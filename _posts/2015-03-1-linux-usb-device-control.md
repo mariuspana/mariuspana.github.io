@@ -30,7 +30,7 @@ Rules are stored in /etc/udev/rules.d and depending on your distribution in /usr
 
 udev rules are parsed in lexical order therefore the order is usually important.
 
-There are two documents I consultfor anything udev related:
+There are two documents I consult for anything udev related:
 
 [Writing udev rules](http://www.reactivated.net/writing_udev_rules.html) by Daniel Drake
 [udev man page](https://www.kernel.org/pub/linux/utils/kernel/hotplug/udev/udev.html)
@@ -48,7 +48,7 @@ Create a rule in /etc/udev/rules.d named 99-blacklist.rules and edit as follows:
 
 The above tells udev that all USB devices are disabled by default (authorized_default) and  any device that is added will implicitly have its authorized flag set to '0' rendering it useless.
 
-You can read more about [usb authorization here](https://www.kernel.org/doc/Documentation/usb/authorization.txt) and take note of the PKI recommendations for a truly secure solutions.
+You can read more about [usb authorization here](https://www.kernel.org/doc/Documentation/usb/authorization.txt) and take note of the PKI recommendations for a truly secure solution.
 
 So now we have effectively killed all USB devices and we need to allow our select devices. USB devices are attached to a USB HUB inside of your computer therefore the USB HUB must be allowed as well. Lets now create our whitelist and well add the USB HUB and our devices.
 
