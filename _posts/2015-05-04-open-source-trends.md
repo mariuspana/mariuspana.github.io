@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Open Source trends"
-excerpt: ""
+excerpt: "Open Source Software is eating the world!"
 tags: [business, technology]
 image:
   feature:
