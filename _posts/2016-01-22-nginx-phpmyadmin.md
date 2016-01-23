@@ -43,7 +43,7 @@ What I was seeing was something along the lines of this:
             fastcgi_ignore_client_abort off;
     }
 
-However anyone could still access /pma even if they were not in the allowed IP ACL. Digging a little deeper I came up with the following: ::
+However anyone could still access /pma even if they were not in the allowed IP ACL. Digging a little deeper I came up with the following: 
 
     location ~ \.php$ {
         location ~ ^/pma {
