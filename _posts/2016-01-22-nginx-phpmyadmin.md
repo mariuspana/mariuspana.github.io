@@ -19,6 +19,7 @@ Nginx logically divides configurations for different content into blocks. These 
 When using location blocks to restrict access make sure that if you start your location block using a regex your nested location blocks also use regex otherwise the nested location blocks will never match.
 
 What I was seeing was something along the lines of this:
+
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         fastcgi_pass 127.0.0.1:9000;
@@ -43,7 +44,7 @@ What I was seeing was something along the lines of this:
             fastcgi_ignore_client_abort off;
     }
 
-However anyone could still access /pma even if they were not in the allowed IP ACL. Digging a little deeper I came up with the following: 
+However anyone could still access /pma even if they were not in the allowed IP ACL. Digging a little deeper I came up with the following:
 
     location ~ \.php$ {
         location ~ ^/pma {
