@@ -11,7 +11,7 @@ modified:
 ---
 
 
-I last talked about [check_mk](http://www.idealistul.ro/check_mk-1.2.8/), version 1.2.8, and some of the new features available such as the fully automatic agent updater.
+I last talked about [check_mk](http://mariuspana.github.io/check_mk-1.2.8/), version 1.2.8, and some of the new features available such as the fully automatic agent updater.
 
 While everything works as expected on the Linux side there is an issue that may arise if you are using Microsoft Windows.
 
